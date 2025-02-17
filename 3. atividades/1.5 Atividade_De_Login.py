@@ -16,20 +16,3 @@ if login == username:
     print ("Acesso concedido!")
 else:
     print ("Login e senha invalidos!")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
