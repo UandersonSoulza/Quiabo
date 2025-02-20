@@ -12,20 +12,3 @@ if ob < 18 or ob > 65:
     print ("Você não irá votar!")
 else:
     print ("Você irá votar!")
-
-# Opção 2    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
