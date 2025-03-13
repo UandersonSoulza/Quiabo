@@ -7,8 +7,8 @@ os.system ("clear")
 # de um solicitante, o valor total do empréstimo solicitado e o número de prestações que o 
 # solicitante deseja pagar e informe se o empréstimo pode ou não ser concedido.
 
-renda_mensal = float(input("Digite a sua renda mensal: "))
 valor_emprestimo = float(input("Digite o valor do empréstimo solicitado: "))
+renda_mensal = float(input("Digite a sua renda mensal: "))
 num_prestacao = int(input("Digite o número de prestações desejadas: "))
 
 valor_prestacao = valor_emprestimo / num_prestacao

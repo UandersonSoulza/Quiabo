@@ -35,6 +35,9 @@ peso_total = morango_kg + maca_kg
 if peso_total > 10 or valor_total > 15:
     valor_total *= 0.90 
 
+print(f"Valor das maçãs: {valor_maca}")
+print(f"Valor dos morangos: {valor_morango:.2f}")
+print(f"Peso total: {peso_total}")
 print(f"Valor total a pagar: {valor_total:.2f}")
 
 
