@@ -1,7 +1,7 @@
 import os 
 os.system ("clear")
 
-while True: # para tirar o loop, apague o wilhe e break. E organize os code
+while True: # para tirar o loop, apague o while e break. E organize os code
     try:
         numero = int(input("Digite um número: "))
     
