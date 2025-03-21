@@ -34,12 +34,15 @@ while True:
             opcao2 = input("Deseja algo a mais? (S ou N): ")
             if opcao2 == "N":
                 gorjeta = input("Deseja pagar os 10% para os garçons? ")
-            elif gorjeta == "N":
+            
+            if gorjeta == "N":
                 break
-            elif gorjeta == "S":
+            
+            if gorjeta == "S":
                 resul = (desconto + valor)
                 break
-            elif opcao2 == "S":
+            
+            if opcao2 == "S":
                 continue
 
         case "2":
