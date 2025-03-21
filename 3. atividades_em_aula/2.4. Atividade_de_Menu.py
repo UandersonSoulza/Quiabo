@@ -11,7 +11,7 @@ Código|\tPrato         |\tValor
 5     |\tPão com ovo   | 5,00  
 """)
 
-opcao = int(input("Digite a opção desejada: "))
+opcao = input("Digite a opção desejada: ")
 
 match opcao:
     case "1":
