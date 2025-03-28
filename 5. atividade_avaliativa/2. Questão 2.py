@@ -6,7 +6,7 @@ os.system ("clear")
 # Por fim, mostre os dados do usuário.
 
 nome = str(input("Digite seu nome: "))
-sexo = str(input("Digite seu sexo: "))
+sexo = str(input("Digite seu sexo (M/F): "))
 estado_civil = str(input("Digite seu estado civil: "))
 
 if sexo == "F" and estado_civil == "Casada":
