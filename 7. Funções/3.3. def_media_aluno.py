@@ -1,22 +1,20 @@
 import os
-os.system ("cls ||clear ")
+os.system ("cls || clear ")
 
-def calc(media):
-    media == (nu1 + nu2) / 2
+def calcular_media(nota1, nota2):
+        media = (nota1 + nota2) / 2
+            print(f"Média: {media:.2f}")
+                verificar_aprovacao(media)
 
-def medidi(media):
-    if media >= 7:
-        print ("Aprovado!")
-    else:
-        print ("Reprovado!")
+                def verificar_aprovacao(media):
+                    if media >= 7:
+                            print("Situação: Aprovado")
+                                else:
+                                        print("Situação: Reprovado")
 
+                                        # Entrada de notas
+                                        nota1 = float(input("Digite a primeira nota: "))
+                                        nota2 = float(input("Digite a segunda nota: "))
 
-
-nu1 = int(input("Digite um número: "))
-nu2 = int(input("Digite um número: "))
-calc(nu1, nu2) 
-medidi (nu1, nu2)
-
-print(f"{medidi} {calc}")
-
-
+                                        # Chamada da função principal
+                                        calcular_media(nota1, nota2)
