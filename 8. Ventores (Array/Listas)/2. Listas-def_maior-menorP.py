@@ -12,3 +12,4 @@ for i in range (QUANTIDADE):
 menor = min(listas_numeros)
 max = max(listas_numeros)
 
+# incompleto favor terminar
