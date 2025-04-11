@@ -10,9 +10,3 @@ nome_visitante = "Marta"
 
 saudacao(nome_visitante) # Chamando a função.
 
-
-
-
-
-
-
