@@ -4,7 +4,7 @@ os.system ("cls||clear")
 lista = []
 QUANTIDADE = 5
 
-def negativo_positivo ():
+def uand_souza ():
 
     for i in range(QUANTIDADE):
         nu = int(input(f"Digite seu {1+i}º número: "))
@@ -17,7 +17,7 @@ def calc (lista):
             i = 0
         print (f"{i}")
     
-medica_gostosa = negativo_positivo()
+medica_gostosa = uand_souza()
 print ()
 calc (medica_gostosa)
 
