@@ -11,7 +11,11 @@ class Pessoa:
     idade: int
 
 # Aplicando caracteristicas da classe.
-pessoa1 = Pessoa(input("Digite seu nome: ")),input("Digite sua idade: ")
+pessoa1 = Pessoa( 
+input("Digite seu nome: "),
+int(input("Digite sua idade: "))
+)
+
 pessoa2 = Pessoa("Bob", 25)
 
 print (f"{pessoa1.nome}, idade: {pessoa1.idade} anos.")
