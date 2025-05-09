@@ -1,4 +1,3 @@
-asd
 import os
 from dataclasses import dataclass
 
@@ -23,12 +22,11 @@ class Autor:
         print(f"Biografia: {self.biografia}")
         print(f"Título do livro: {self.livro.titulo} || Ano do livro: {self.livro.ano}")
 
-livro1 = Livro(
-titulo = input("Título do livro: "),
-ano = int(input("Ano do livro: "))
-)
-
 for i in range (QUANTIDADE_AUTORES):
+    livro1 = Livro(
+    titulo = input("Título do livro: "),
+    ano = int(input("Ano do livro: "))
+)
     autor1 = Autor(
     input("Autor: "),
     input("Biografia: "),
@@ -40,8 +38,7 @@ os.system ("cls||clear")
 for i in autor1 (listas_autores):
     autor1.exibir_dados()
 
-
-
+# incompleto
 
 
 
