@@ -28,3 +28,32 @@ for cliente in listas_clientes:
     print (f"E-mail: {cliente.email}")
     print (f"Telefone: {cliente.telefone}")
     print()
+
+# Salvando em um arquivo .txt
+print ("= Salvando os dados dos clientes =")
+nome_arquivo = "dados_clientes.txt"
+
+# w -> escrita/salvar/sobrescrever
+# a -> escrita/salvar/acumular
+
+with open (nome_arquivo, "w") as arquivo:
+    for cliente in listas_clientes:
+        arquivo.write(f"{cliente.nome},{cliente.email},{cliente.telefone}\n")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
