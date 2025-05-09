@@ -22,14 +22,16 @@ class Pessoa:
 
 endereco1 = Endereco(
 input("Digite seu endereço: "),
-input("Digite sua cidade: ")
-
-
+input("Digite sua cidade: "),
+input("Digite o número da sua rua: ")
 )
-        
-#terminar em casa...   
+          
+pessoa1 = Pessoa(
+input("Digite seu nome: "),
+input("Digite seu email: "),
+endereco1)
 
-
+pessoa1.exibir_resul()
 
 
 
