@@ -3,8 +3,10 @@ import time
 from dataclasses import dataclass
 os.system ("cls||clear")
 
-def verificar_lista_vazia(lista_funcionarios):
-    if not lista_funcionarios:
+funcionarios = []
+
+def verificar_lista_vazia(funcionarios):
+    if not funcionarios:
         print("\nA lista está vazia.")
         return True
     return False 
@@ -16,96 +18,63 @@ class Registro:
     cpf: int
     funcao: str
 
-def adicionar(lista_funcionarios):
-    resgitro1 = Registro(
+def adicionar(funcionarios):
+    registro1 = Registro(
         nome = input("Digite o nome que deseja adicionar: "),
-        data_nascimento = int(input("Digite sua data de nascimento que deseja adicionar: ")),
+        data_nascimento = int(input("Digite a data de nascimento que deseja adicionar: ")),
         cpf = int(input("Digite seu CPF que deseja adicionar: ")),
         funcao = input("Digite sua função que deseja adicionar: ")
     )
-    lista_funcionarios.append(resgitro1)
+    funcionarios.append(registro1)
     print("Adicionado com sucesso.")
 
-def mostrar (lista_funcionarios):
-    if verificar_lista_vazia (lista_funcionarios):
+def mostrar(funcionarios):
+    if verificar_lista_vazia (funcionarios):
         return
 
     print ("↓↓↓ Lista dos funcionários ↓↓↓")
-    for nome in lista_funcionarios: 
+    for nome in funcionarios: 
         print (f"{nome}")
-    for data_nascimento in lista_funcionarios:
-        print (f"{data_nascimento}")
-    for cpf in lista_funcionarios:
-        print (f"{cpf}")
-    for funcao in lista_funcionarios:
-        print (f"{funcao}")
 
-def atualizar (lista_funcionarios):
-    if verificar_lista_vazia (lista_funcionarios):
+def atualizar (funcionarios):
+    if verificar_lista_vazia (funcionarios):
         return
 
-    mostrar(lista_funcionarios)
+    mostrar(funcionarios)
     nome_antigo = input("Digite o nome que deseja atualizar: ")
-    if nome_antigo in lista_funcionarios:
-        novo_nome = input(f"Digite o novo nome para {nome_antigo}: ")
-        indice = lista_funcionarios.index(nome_antigo)
-        lista_funcionarios[indice] = novo_nome
-        print(f"{nome_antigo} foi atualizado para {novo_nome}")
-    else:
-        print(f"\nO nome {nome_antigo} não foi encontrado.")
+    try:
+        indice = [registro1.nome for registro1 in funcionarios].index(nome_antigo)
+        registro1 = funcionarios[indice]
+        registro1.nome = input("Digite seu novo nome: ")
+    except ValueError:
+        print ("Erro")
 
-    data_nascimento_antigo = input("Digite o nome que deseja atualizar: ")
-    if data_nascimento_antigo in lista_funcionarios:
-        nova_data_nascimento = input(f"Digite o novo nome para {data_nascimento_antigo}: ")
-        indice = lista_funcionarios.index(data_nascimento_antigo)
-        lista_funcionarios[indice] = nova_data_nascimento
-        print(f"{data_nascimento_antigo} foi atualizado para {nova_data_nascimento}")
-    else:
-        print(f"\nO nome {data_nascimento_antigo} não foi encontrado.")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+def excluir(funcionarios):
+    if verificar_lista_vazia(funcionarios):
+        return
+   
+    mostrar(funcionarios) 
+    nome_excluido = input("Digite o nome que deseja atualizar: ")
+    try:
+        indice = [registro1.nome for registro1 in funcionarios].index(nome_excluido)
+        registro1 = funcionarios[indice]
+        funcionarios.remove(registro1)
+    except ValueError:
+        print ("Erro")
+   
 
 while True:
     print("""
              ------ REGISTRO ------
     | \t↓↓↓ Preencher as informações ↓↓↓ | 
-    1  | NOME
-    2  | DATA DE NASCIMENTO
-    3  | CPF
-    4  | FUNÇÃO
+    1  | ADICIONAR
+    2  | MOSTRAR
+    3  | ATUALIZAR
+    4  | EXCLUIR
     5  | SAIR
     | \t↑↑↑ ------------------------ ↑↑↑ | 
           """)
+
 
     opcao = int(input("Digite uma das opções acima: "))
    
@@ -124,5 +93,5 @@ while True:
         case _:
             print("\nOpção inválida. \nTente novamente.")
     if opcao != 1:
-        time.sleep(5)
+        time.sleep(3)
     os.system("cls || clear")
