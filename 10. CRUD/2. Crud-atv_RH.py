@@ -14,15 +14,15 @@ def verificar_lista_vazia(funcionarios):
 @dataclass
 class Registro:
     nome: str
-    data_nascimento: int
-    cpf: int
+    data_nascimento: str
+    cpf: str
     funcao: str
 
 def adicionar(funcionarios):
     registro1 = Registro(
         nome = input("Digite o nome que deseja adicionar: "),
-        data_nascimento = int(input("Digite a data de nascimento que deseja adicionar: ")),
-        cpf = int(input("Digite seu CPF que deseja adicionar: ")),
+        data_nascimento = input("Digite a data de nascimento que deseja adicionar: "),
+        cpf = input("Digite seu CPF que deseja adicionar: "),
         funcao = input("Digite sua função que deseja adicionar: ")
     )
     funcionarios.append(registro1)
@@ -45,7 +45,11 @@ def atualizar (funcionarios):
     try:
         indice = [registro1.nome for registro1 in funcionarios].index(nome_antigo)
         registro1 = funcionarios[indice]
+
         registro1.nome = input("Digite seu novo nome: ")
+        registro1.data_nascimento = input("Digite sua novo data: ")
+        registro1.cpf = input("Digite seu novo cpf: ")
+        registro1.funcao = input("Digite seu novo funçao: ")
     except ValueError:
         print ("Erro")
 
@@ -74,7 +78,6 @@ while True:
     5  | SAIR
     | \t↑↑↑ ------------------------ ↑↑↑ | 
           """)
-
 
     opcao = int(input("Digite uma das opções acima: "))
    

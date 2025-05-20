@@ -31,16 +31,16 @@ for cliente in listas_clientes:
 
 # Salvando em um arquivo .txt
 print ("= Salvando os dados dos clientes =")
-nome_arquivo = "dados_clientes.txt"
+nome_arquivo = "dados_clientes.csv"
 
 # w -> escrita/salvar/sobrescrever
 # a -> escrita/salvar/acumular
+def salvar():    
+    with open (nome_arquivo, "w") as arquivo:
+        for cliente in listas_clientes:
+            arquivo.write(f"{cliente.nome},{cliente.email},{cliente.telefone}\n")
 
-with open (nome_arquivo, "w") as arquivo:
-    for cliente in listas_clientes:
-        arquivo.write(f"{cliente.nome},{cliente.email},{cliente.telefone}\n")
-
-
+salvar()
 
 
 
