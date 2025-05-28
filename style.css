@@ -1,0 +1,85 @@
+/* reset básico */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Arial, Helvetica, sans-serif;
+    background-image:url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0a95a158-ba1c-47bf-aabb-765b81c03b29/devel8s-6633c382-e915-4a3c-b766-2f6b73c38e76.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzBhOTVhMTU4LWJhMWMtNDdiZi1hYWJiLTc2NWI4MWMwM2IyOVwvZGV2ZWw4cy02NjMzYzM4Mi1lOTE1LTRhM2MtYjc2Ni0yZjZiNzNjMzhlNzYuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.v6Glbbms0QRQe4MOjfBv8Flpw3lwFjLdgKZathzvajM) ;
+    background-size: contain;
+    background-repeat: no-repeat
+    color black
+    padding 40px
+}
+
+
+/* ↓ mexendo com a imagem */
+
+img {
+    width: 200px;
+    margin: -1%;
+    display: block;
+}
+
+.logo-detroid {
+    width: 300px;
+    margin: -1%;
+    display: block;
+}
+
+.logo-grounded {
+    width: 300px;
+    margin: -1%;
+    display: block;
+}
+
+h1{
+    color: black;
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+p {
+    font-size: 18px;
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: justify; /*ou center */
+}
+
+a{
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 auto;
+    text-align: starthttps://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0a95a158-ba1c-47bf-aabb-765b81c03b29/devel8s-6633c382-e915-4a3c-b766-2f6b73c38e76.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzBhOTVhMTU4LWJhMWMtNDdiZi1hYWJiLTc2NWI4MWMwM2IyOVwvZGV2ZWw4cy02NjMzYzM4Mi1lOTE1LTRhM2MtYjc2Ni0yZjZiNzNjMzhlNzYuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.v6Glbbms0QRQe4MOjfBv8Flpw3lwFjLdgKZathzvajM;
+    display: block;
+}
+
+ul{
+    border: 1px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+ol{
+    border: 1px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
